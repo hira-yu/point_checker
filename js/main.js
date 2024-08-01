@@ -20,5 +20,5 @@ $("#check").on('click', function(){
     ) / 37.5;
 
     console.log(rep);
-    $("#result").text("科目評価100のうち，小テストで" + test + "点，レポートで" + rep + "点あるので，" + (60 - test - rep) + "点以上とればおｋ");
+    $("#result").text("科目評価100のうち，小テストで" + test + "点，レポートで" + rep + "点あるので，" + (60 - test - rep) * 4 + "点以上とればおｋ");
 })
