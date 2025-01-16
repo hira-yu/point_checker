@@ -1,5 +1,5 @@
 $("#check").on('click', function(){
-    let test = (Number($("#test_1").val()) + Number($("#test_2").val())) * 0.1;
+    //let test = (Number($("#test_1").val()) + Number($("#test_2").val())) * 0.1;
 
     let rep = (
         Number($("#rep_1").val()) +
@@ -19,5 +19,5 @@ $("#check").on('click', function(){
         Number($("#rep_15").val())
     ) / 37.5;
     
-    $("#result").text("科目評価100のうち，小テストで" + test + "点，レポートで" + rep + "点あるので，" + (60 - test - rep) * 2.5 + "点以上とればおｋ");
+    $("#result").text("科目評価100のうち，レポートで" + rep + "点あるので，" + (60 - rep) * 1.66 + "点以上とればおｋ");
 })
